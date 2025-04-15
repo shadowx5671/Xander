@@ -43,19 +43,35 @@
 <!-- Navbar -->
 <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark-custom fixed-top shadow-sm">
   <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="/assets/a8479a922b151b03df56a6db105dc5dd-modified.png" class="me-2" alt="Bootstrap" width="40">
+    <a class="navbar-brand" style="color: #C8B39A" href="#">
+      <img src="/assets/a8479a922b151b03df56a6db105dc5dd-modified.png" class="me-2" alt="Error" width="40">
       ~ Xander Bot
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler rounded btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+      <i class="bi bi-list"></i>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navContent">
       <ul class="navbar-nav gap-3">
-        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-        <li class="nav-item"><a class="nav-link" href="#invite">Invite</a></li>
-        <li class="nav-item"><a class="nav-link" href="xanderbot.statuspage.io">Status</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#home">
+            <i class="bi bi-house-door me-1"></i> Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#features">
+            <i class="bi bi-stars me-1"></i> Features
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://xanderbot.statuspage.io">
+            <i class="bi bi-activity me-1"></i> Status
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://discord.com/oauth2/authorize?client_id=1064275037189832774&permissions=8&integration_type=0&scope=bot">
+            <i class="bi bi-person-plus me-1"></i> Invite
+          </a>
+        </li>
       </ul>
     </div>
   </div>
@@ -66,70 +82,102 @@
   <div class="container">
     <img src="assets/Unbenannt.png" class="mb-4" alt="Logo" style="height: 30vw; max-height: 200px;">
     <p class="lead mb-4">A multipurpose discord bot for minigames, <br> server management, social interaction and <br> many more!</p>
-    <a href="#invite" class="btn btn-purple btn-lg">Bot einladen</a>
+    <div class="d-flex justify-content-center gap-3">
+      <button onclick="window.location.href='https://discord.com/oauth2/authorize?client_id=1064275037189832774&permissions=8&integration_type=0&scope=bot';"
+              class="btn btn-outline-light rounded-5 btn-lg" style="width: 200px; height: 50px;">
+        <i class="bi bi-discord me-2"></i> Invite Bot
+      </button>
+      <button class="btn btn-outline-light rounded-5 btn-lg" style="width: 200px; height: 50px;">
+        <i class="bi bi-file-earmark-medical-fill"></i> Docs
+      </button>
+    </div>
   </div>
 </section>
 
 <!-- Features -->
 <section id="features" class="py-5 bg-gray-custom text-white">
   <div class="container" data-aos="fade-up">
-    <h2 class="text-center mb-5 display-5 fw-bold">Features</h2>
+    <h2 class="text-center mt-5 mb-5 display-5 fw-bold">Features</h2>
     <div class="row g-4">
 
       <div class="col-md-6 col-lg-4">
-        <div class="bg-dark-custom rounded p-4 h-100">
+        <div class="bg-dark-custom rounded-4 p-4 h-100">
           <h5 class="fw-semibold">Minigames</h5>
-          <p>Spiele lustige kleine Games direkt auf deinem Server – ideal zum Zeitvertreib und Community-Building!</p>
+          <p>Play fun little games directly on your server - ideal for passing the time and community building!</p>
         </div>
       </div>
 
       <div class="col-md-6 col-lg-4">
-        <div class="bg-dark-custom rounded p-4 h-100">
+        <div class="bg-dark-custom rounded-4 p-4 h-100">
           <h5 class="fw-semibold">Moderation</h5>
-          <p>Automatisierte Moderation mit Befehlen wie <code>/kick</code>, <code>/ban</code>, Auto-Mod und mehr.</p>
+          <p>Automated moderation with commands such as
+            <code style="color: #C8B39A">/kick</code>,
+            <code style="color: #C8B39A">/ban</code>,
+            <code style="color: #C8B39A">/mute</code>,
+            <code style="color: #C8B39A">/prison</code>
+            with tools to protect your server and more.</p>
         </div>
       </div>
 
       <div class="col-md-6 col-lg-4">
-        <div class="bg-dark-custom rounded p-4 h-100">
-          <h5 class="fw-semibold">Embeds</h5>
-          <p>Erstelle schöne, anpassbare Embed-Nachrichten – direkt über Commands oder Web UI (optional).</p>
+        <div class="bg-dark-custom rounded-4 p-4 h-100">
+          <h5 class="fw-semibold">Server Design Tools</h5>
+          <p>We have a custom embed builder that can be used to personalize various functions of the bot, such as the welcome message or verification process.</p>
         </div>
       </div>
 
       <div class="col-md-6 col-lg-4">
-        <div class="bg-dark-custom rounded p-4 h-100">
-          <h5 class="fw-semibold">Geburtstage</h5>
-          <p>Verwalte Geburtstage deiner Community, mit täglichen Erinnerungen und automatischen Glückwünschen!</p>
+        <div class="bg-dark-custom rounded-4 p-4 h-100">
+          <h5 class="fw-semibold">Birthdays</h5>
+          <p>Manage your community's birthdays, with reminders, automatic congratulations and birthday gifts for your users. Everything customizable!</p>
         </div>
       </div>
 
       <div class="col-md-6 col-lg-4">
-        <div class="bg-dark-custom rounded p-4 h-100">
-          <h5 class="fw-semibold">Viel mehr</h5>
-          <p>Xander bietet außerdem Level-Systeme, Reaktionsrollen, Übersetzungen und ist ständig erweiterbar.</p>
+        <div class="bg-dark-custom rounded-4 p-4 h-100">
+          <h5 class="fw-semibold">Level system</h5>
+          <p>Engage your community with a fully customizable leveling system. Reward activity with roles, perks, or other incentives to keep your server active and fun!</p>
         </div>
       </div>
 
+      <div class="col-md-6 col-lg-4">
+        <div class="bg-dark-custom rounded-4 p-4 h-100">
+          <h5 class="fw-semibold">Self Roles</h5>
+          <p>Let your members personalize their experience by assigning themselves roles. Perfect for organizing interests, pings and more.</p>
+        </div>
+      </div>
     </div>
+
+    <p class="text-center mt-4 mb-5">And much more...</p>
   </div>
 </section>
 
 <!-- Status -->
 <section id="status" class="py-5 text-center" data-aos="fade-up">
   <div class="container">
-    <h2 class="display-6 fw-bold mb-4">Status</h2>
-    <p class="mb-3">Erfahre, wie du Xander optimal nutzt: Befehle, Setups und Tipps.</p>
-    <a href="#" class="text-decoration-underline text-white fw-semibold hover-text-purple">Zur Doku →</a>
-  </div>
+    <h2 class="display-6 fw-bold mt-5 mb-4">Status</h2>
+    <p class="mb-3">In case the bot isn't responding, please refer to this online service status page<br> to check for any ongoing issues on our side.
+      If the page doesn't display any error,<br> but the bot is not working correctly we kindly ask you submit a bug report<br> via our support server.</p>
+    <button onclick="window.location.href='https://discord.com/oauth2/authorize?client_id=1064275037189832774&permissions=8&integration_type=0&scope=bot';"
+            class="btn btn-outline-light mt-4 mb-4 rounded-5 btn-lg" style="width: 200px; height: 50px;">
+      <i class="bi bi-activity me-1"></i> Status Page
+    </button>  </div>
 </section>
 
 <!-- Invite -->
 <section id="invite" class="py-5 bg-gray-custom text-center" data-aos="zoom-in">
   <div class="container">
-    <h2 class="display-6 fw-bold mb-4">Conviced?</h2>
-    <p class="mb-4">Invite Xander to your Discord Server today and explore all features we have for you!</p>
-    <a href="#" class="btn mb-5 btn-purple btn-lg">Einladungslink</a>
+    <h2 class="display-6 fw-bold mt-5 mb-4">Conviced?</h2>
+    <p class="mb-4">Invite Xander to your Discord Server today and explore <br>all features we have for you! Or join our Support Server <br>if you have any questions.</p>
+    <div class="d-flex justify-content-center gap-3">
+      <button onclick="window.location.href='https://discord.com/oauth2/authorize?client_id=1064275037189832774&permissions=8&integration_type=0&scope=bot';"
+              class="btn btn-outline-light rounded-5 btn-lg" style="width: 200px; height: 50px;">
+        <i class="bi bi-discord me-2"></i> Invite Bot
+      </button>
+      <button class="btn btn-outline-light rounded-5 btn-lg" style="width: 200px; height: 50px;">
+        <i class="bi bi-person-plus-fill"></i> Join Discord
+      </button>
+    </div>
   </div>
 </section>
 
@@ -145,5 +193,6 @@
 <script>
   AOS.init({ once: true });
 </script>
+<script src="https://xanderbot.statuspage.io/embed/script.js"></script>
 </body>
 </html>
