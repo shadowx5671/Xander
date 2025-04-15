@@ -1,11 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Meine Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xander Bot</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Google Font: Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #05020C;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .bg-dark-custom {
+      background-color: #0f032b;
+    }
+
+    .bg-gray-custom {
+      background-color: black;
+    }
+
+    .btn-purple {
+      background-color: #7c3aed;
+      color: white;
+    }
+
+    .btn-purple:hover {
+      background-color: #6d28d9;
+      color: white;
+    }
+  </style>
 </head>
-<body>
-  <h1>Willkommen auf meiner Website!</h1>
-  <p>Diese Seite ist kostenlos auf GitHub Pages gehostet.</p>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
+<!-- Navbar -->
+<nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark-custom fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="/assets/a8479a922b151b03df56a6db105dc5dd-modified.png" class="me-2" alt="Bootstrap" width="40">
+      ~ Xander Bot
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navContent">
+      <ul class="navbar-nav gap-3">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="#invite">Invite</a></li>
+        <li class="nav-item"><a class="nav-link" href="xanderbot.statuspage.io">Status</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Home -->
+<section id="home" class="vh-100 d-flex align-items-center justify-content-center text-center pt-5" data-aos="fade-up">
+  <div class="container">
+    <img src="assets/Unbenannt.png" class="mb-4" alt="Logo" style="height: 30vw; max-height: 200px;">
+    <p class="lead mb-4">A multipurpose discord bot for minigames, <br> server management, social interaction and <br> many more!</p>
+    <a href="#invite" class="btn btn-purple btn-lg">Bot einladen</a>
+  </div>
+</section>
+
+<!-- Features -->
+<section id="features" class="py-5 bg-gray-custom text-white">
+  <div class="container" data-aos="fade-up">
+    <h2 class="text-center mb-5 display-5 fw-bold">Features</h2>
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="bg-dark-custom rounded p-4 h-100">
+          <h5 class="fw-semibold">Minigames</h5>
+          <p>Spiele lustige kleine Games direkt auf deinem Server – ideal zum Zeitvertreib und Community-Building!</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="bg-dark-custom rounded p-4 h-100">
+          <h5 class="fw-semibold">Moderation</h5>
+          <p>Automatisierte Moderation mit Befehlen wie <code>/kick</code>, <code>/ban</code>, Auto-Mod und mehr.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="bg-dark-custom rounded p-4 h-100">
+          <h5 class="fw-semibold">Embeds</h5>
+          <p>Erstelle schöne, anpassbare Embed-Nachrichten – direkt über Commands oder Web UI (optional).</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="bg-dark-custom rounded p-4 h-100">
+          <h5 class="fw-semibold">Geburtstage</h5>
+          <p>Verwalte Geburtstage deiner Community, mit täglichen Erinnerungen und automatischen Glückwünschen!</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="bg-dark-custom rounded p-4 h-100">
+          <h5 class="fw-semibold">Viel mehr</h5>
+          <p>Xander bietet außerdem Level-Systeme, Reaktionsrollen, Übersetzungen und ist ständig erweiterbar.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Status -->
+<section id="status" class="py-5 text-center" data-aos="fade-up">
+  <div class="container">
+    <h2 class="display-6 fw-bold mb-4">Status</h2>
+    <p class="mb-3">Erfahre, wie du Xander optimal nutzt: Befehle, Setups und Tipps.</p>
+    <a href="#" class="text-decoration-underline text-white fw-semibold hover-text-purple">Zur Doku →</a>
+  </div>
+</section>
+
+<!-- Invite -->
+<section id="invite" class="py-5 bg-gray-custom text-center" data-aos="zoom-in">
+  <div class="container">
+    <h2 class="display-6 fw-bold mb-4">Conviced?</h2>
+    <p class="mb-4">Invite Xander to your Discord Server today and explore all features we have for you!</p>
+    <a href="#" class="btn mb-5 btn-purple btn-lg">Einladungslink</a>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="text-center bg-gray-custom py-4 bg-dark-custom">
+  &copy; 2025 Xander Bot. All rights reserved.
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ once: true });
+</script>
 </body>
 </html>
